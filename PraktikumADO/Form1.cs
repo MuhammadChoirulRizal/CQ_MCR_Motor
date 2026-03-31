@@ -36,5 +36,10 @@ namespace PraktikumADO
         {
 
         }
+
+        private void Hasil(object sender, EventArgs e)
+        {
+
+        }
     }
 }

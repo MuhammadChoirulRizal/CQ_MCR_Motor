@@ -32,6 +32,7 @@
             this.HitungMhs = new System.Windows.Forms.Button();
             this.HitungMK = new System.Windows.Forms.Button();
             this.Update = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Connect
@@ -74,11 +75,22 @@
             this.Update.UseVisualStyleBackColor = true;
             this.Update.Click += new System.EventHandler(this.btnUpdate);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(55, 91);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 16);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Hasil";
+            this.label1.Click += new System.EventHandler(this.Hasil);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Update);
             this.Controls.Add(this.HitungMK);
             this.Controls.Add(this.HitungMhs);
@@ -86,6 +98,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -95,6 +108,7 @@
         private System.Windows.Forms.Button HitungMhs;
         private System.Windows.Forms.Button HitungMK;
         private System.Windows.Forms.Button Update;
+        private System.Windows.Forms.Label label1;
     }
 }
 
