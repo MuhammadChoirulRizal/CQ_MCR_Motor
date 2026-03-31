@@ -143,17 +143,18 @@ namespace PraktikumADO
             {
                 Koneksi();
 
-                string query = "INSERT INTO ProgramStudi VALUES ('MI01','Manajemen Informatika')";
+                string query = "INSERT INTO ProgramStudi VALUES ('MI" + DateTime.Now.Second + "','Test')";
                 cmd = new SqlCommand(query, conn);
 
                 int hasil = cmd.ExecuteNonQuery();
+
                 MessageBox.Show("Data berhasil ditambahkan: " + hasil);
 
                 conn.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
     }
