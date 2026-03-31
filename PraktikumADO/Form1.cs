@@ -117,4 +117,44 @@ namespace PraktikumADO
             }
         }
 
-        
+        private void btnUpdateMk_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+
+                string query = "UPDATE MataKuliah SET SKS=4 WHERE KodeMK='IF210101'";
+                cmd = new SqlCommand(query, conn);
+
+                int hasil = cmd.ExecuteNonQuery();
+                MessageBox.Show("Data diupdate: " + hasil);
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnInsertProdi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+
+                string query = "INSERT INTO ProgramStudi VALUES ('MI01','Manajemen Informatika')";
+                cmd = new SqlCommand(query, conn);
+
+                int hasil = cmd.ExecuteNonQuery();
+                MessageBox.Show("Data berhasil ditambahkan: " + hasil);
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+    }
+}
