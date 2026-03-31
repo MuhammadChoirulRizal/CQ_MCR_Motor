@@ -33,6 +33,7 @@
             this.HitungMK = new System.Windows.Forms.Button();
             this.Update = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtHasil = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Connect
@@ -85,11 +86,19 @@
             this.label1.Text = "Hasil";
             this.label1.Click += new System.EventHandler(this.Hasil);
             // 
+            // txtHasil
+            // 
+            this.txtHasil.Location = new System.Drawing.Point(176, 91);
+            this.txtHasil.Name = "txtHasil";
+            this.txtHasil.Size = new System.Drawing.Size(416, 22);
+            this.txtHasil.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtHasil);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Update);
             this.Controls.Add(this.HitungMK);
@@ -109,6 +118,7 @@
         private System.Windows.Forms.Button HitungMK;
         private System.Windows.Forms.Button Update;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtHasil;
     }
 }
 
