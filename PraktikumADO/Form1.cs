@@ -16,5 +16,10 @@ namespace PraktikumADO
         {
             InitializeComponent();
         }
+
+        private void btnConnect(object sender, EventArgs e)
+        {
+
+        }
     }
 }
