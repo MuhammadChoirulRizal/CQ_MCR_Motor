@@ -31,6 +31,7 @@
             this.Connect = new System.Windows.Forms.Button();
             this.HitungMhs = new System.Windows.Forms.Button();
             this.HitungMK = new System.Windows.Forms.Button();
+            this.Update = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Connect
@@ -63,11 +64,22 @@
             this.HitungMK.UseVisualStyleBackColor = true;
             this.HitungMK.Click += new System.EventHandler(this.btnHitungMK);
             // 
+            // Update
+            // 
+            this.Update.Location = new System.Drawing.Point(634, 344);
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(101, 45);
+            this.Update.TabIndex = 3;
+            this.Update.Text = "Update";
+            this.Update.UseVisualStyleBackColor = true;
+            this.Update.Click += new System.EventHandler(this.btnUpdate);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Update);
             this.Controls.Add(this.HitungMK);
             this.Controls.Add(this.HitungMhs);
             this.Controls.Add(this.Connect);
@@ -82,6 +94,7 @@
         private System.Windows.Forms.Button Connect;
         private System.Windows.Forms.Button HitungMhs;
         private System.Windows.Forms.Button HitungMK;
+        private System.Windows.Forms.Button Update;
     }
 }
 

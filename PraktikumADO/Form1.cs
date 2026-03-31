@@ -31,5 +31,10 @@ namespace PraktikumADO
         {
 
         }
+
+        private void btnUpdate(object sender, EventArgs e)
+        {
+
+        }
     }
 }
