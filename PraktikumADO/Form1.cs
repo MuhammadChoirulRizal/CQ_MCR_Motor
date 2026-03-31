@@ -13,6 +13,14 @@ namespace PraktikumADO
             InitializeComponent();
         }
 
+        private void Koneksi()
+        {
+            conn = new SqlConnection(
+                "Data Source=LAPTOP-5LMNPAS3\\CHOY;Initial Catalog=DBAkademikADO;Integrated Security=True"
+            );
+
+            conn.Open();
+        }
         private void btnConnect(object sender, EventArgs e)
         {
 
