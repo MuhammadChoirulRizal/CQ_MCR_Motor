@@ -8,6 +8,7 @@ namespace PraktikumADO
     {
         SqlConnection conn;
         SqlCommand cmd;
+
         public Form1()
         {
             InitializeComponent();
@@ -21,41 +22,17 @@ namespace PraktikumADO
 
             conn.Open();
         }
-        private void btnConnect(object sender, EventArgs e)
+
+        private void btnConnect_Click(object sender, EventArgs e)
         {
             try
             {
                 Koneksi();
-                conn.Open();
-
                 MessageBox.Show("Koneksi ke database berhasil");
-
                 conn.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void btnHitungMhs(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnHitungMK(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnUpdate(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Hasil(object sender, EventArgs e)
-        {
-
-        }
-    }
-}
